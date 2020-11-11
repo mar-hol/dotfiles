@@ -54,6 +54,7 @@ install_utils() {
 
   # Bash git prompt - to show git repository status on the command line prompt
   git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
+  # Install https://github.com/danielgtaylor/restish/releases/tag/v0.4.4
 }
 
 main() {
