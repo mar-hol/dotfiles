@@ -12,6 +12,8 @@ declare dotfiles="$HOME/.dotfiles"
 declare backupdir="$HOME/.appstudiosetup.backups"
 declare execdir="$HOME/bin"
 declare jqrelease="jq-1.6"
+declare gorelease ="go1.15.4"
+declare osplatform ="linux-amd64"
 
 # Make backup of a file (not even sure if backups are really neccessary,
 # as this is for a freshly minted dev space.
@@ -57,6 +59,14 @@ install_utils() {
   
   # Install https://github.com/danielgtaylor/restish/releases/tag/v0.4.4
   # todo download the needed zip-archive, unpack and install in /home/bin or something like this
+
+  # Install latest version of GO
+  # https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
+  # https://golang.org/doc/install ->  tar -C /usr/local -xzf go1.15.4.linux-amd64.tar.gz
+  local traget_go="$execdir/go"
+  curl -L https://golang.org/dl/${gorelease}.${osplatform}.tar.gz > "$target/${gorelease}.${osplatform}.tar.gz" | tar -C "$target" -xzf go1.15.4.linux-amd64.tar.gz
+  #curl -L https://golang.org/dl/go1.15.4.linux-amd64.tar.gz > $HOME/bin/go2/go1.15.4.linux-amd64.tar.gz  | tar -C /home/user/bin/go2 -xzf go1.15.4.linux-amd64.tar.gzs
+  # cealn up => remove archive file
 }
 
 main() {
