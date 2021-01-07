@@ -8,4 +8,6 @@ marhols dotfiles repo
 + setup DEVSTACK Git automatically?
 + aws console
 + scp cli
++ install extensions automatically (https://open-vsx.org/extension/golang/Go)
++ https://github.com/ttscoff/mdless
 
