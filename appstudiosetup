@@ -63,8 +63,8 @@ install_utils() {
   # Install latest version of GO
   # https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
   # https://golang.org/doc/install ->  tar -C /usr/local -xzf go1.15.4.linux-amd64.tar.gz
-  local traget_go="$execdir/go"
-  curl -L https://golang.org/dl/${gorelease}.${osplatform}.tar.gz > "$target/${gorelease}.${osplatform}.tar.gz" | tar -C "$target" -xzf go1.15.4.linux-amd64.tar.gz
+  #local traget_go="$execdir/go"
+  #curl -L https://golang.org/dl/${gorelease}.${osplatform}.tar.gz > "$target/${gorelease}.${osplatform}.tar.gz" | tar -C "$target" -xzf go1.15.4.linux-amd64.tar.gz
   #curl -L https://golang.org/dl/go1.15.4.linux-amd64.tar.gz > $HOME/bin/go2/go1.15.4.linux-amd64.tar.gz  | tar -C /home/user/bin/go2 -xzf go1.15.4.linux-amd64.tar.gzs
   # cealn up => remove archive file
 }
