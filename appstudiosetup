@@ -12,7 +12,7 @@ declare dotfiles="$HOME/.dotfiles"
 declare backupdir="$HOME/.appstudiosetup.backups"
 declare execdir="$HOME/bin"
 declare jqrelease="jq-1.6"
-declare gorelease ="go1.15.4"
+#declare gorelease ="go1.15.4"
 declare osplatform ="linux-amd64"
 
 # Make backup of a file (not even sure if backups are really neccessary,
